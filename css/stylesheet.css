@@ -1,0 +1,655 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*ALGEMENE EN BODY CSS*/
+*{
+	
+}
+body{
+	background-color: #B6F6EF;
+    color: #123c69;
+	font-family: 'Muli';
+	font-weight: bold;
+	padding: 0;
+    margin: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+
+
+/*CLASSES*/
+/*TITELS MET TEKSTVLAK (OVER ONS,ONZE AANPAK,CONTACT,...)*/
+.title{
+	height: 100px;
+	width: 500px;
+	background-color: #01CBE1;
+	border-radius: 35px;
+	text-align: center;
+	position: relative;
+		left: 33%;
+		bot: 10%;
+	/*oplossing position relative overlapping position fixed*/
+	z-index : -99;
+
+}
+.title p{
+	font-size: 300%;
+	color: white;
+	font-weight: bold;
+	padding-top: 20px;
+}
+/*GRADIENTS & ACHTERGROND (OVER ONS)*/
+.gradient_top{
+  height: 150px;
+  background-color: #74E2EE; 
+  background-image: linear-gradient(#B6F6EF, #74E2EE); 
+}
+.achtergrond{
+	height: 300px;
+	background-color: #74E2EE;
+}
+.gradient_bot{
+  height: 150px;
+  background-color: #74E2EE; 
+  background-image: linear-gradient(#74E2EE,#B6F6EF); 
+}
+/*TUSSENTITELS MET TEKSTVLAK (BEHAALD,IN PROGRESS,...)*/
+.title_2{
+	height: 50px;
+	width: 275px;
+	padding: 0;
+	margin: 0;
+	background-color: #01CBE1;
+	border-radius: 25px;
+	position: relative;
+		left: 41%;
+		bot: 10%;
+	/*oplossing position relative overlapping position fixed*/
+	z-index :20;
+}
+.title_2 p{
+	color: white;
+	font-size: 140%;
+	text-align: center;
+	font-weight: bolder;
+	padding: 0;
+	margin: 0;
+	padding-top: 13px;
+}
+
+
+
+/*HEADER EN NAVIGATIE FIXED*/
+#header{
+	position: fixed;
+	width: 100%;
+	height: 10%;
+	margin: 0;
+	padding: 0;
+	background-color: #B6F6EF;
+	z-index: 100;
+}
+nav{
+    background-color: #123c69;
+    min-height: 100px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+nav img {
+    float: left;
+    width: 100px;
+    height: 100px;
+	padding: 0;
+	margin: 0;
+}
+nav li{
+    float: left;
+    display: inline;
+    padding: 10px 40px 0 40px;
+	padding-top: 30px;
+    font-weight: bolder;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: xx-large;
+}
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+nav a:hover{
+    color: #01CBE1;
+}
+/*welcome*/
+#welcome_donatie{
+	color: white;
+	text-align: center;
+	font-size: 3em;
+	width: 500px;
+	height: 100px;
+	border: 3px solid white;
+	border-radius: 30px;
+	position: absolute;
+		top: 400px;
+		left: 160px;
+	background-color: #01CBE1;
+}
+#welcome_donatie p{
+	margin-top: 18px;
+}
+#welcome_donatie a:hover{
+	color: #01CBE1;
+	border: 3px solid #01CBE1;
+	background-color: white;
+	cursor: pointer;
+}
+#welcome_donatie a p:hover{
+	color: #01CBE1;
+	cursor: pointer;
+}
+/*OVER ONS*/
+#over_ons{
+	height: 800px;
+	/*border: solid black 5px;*/
+}
+#over_ons_title{
+	z-index: 50;
+	position: relative;
+		top: 60px;
+}
+#over_ons_logo{
+	width: 300px;
+	height: 300px;
+	border: solid white 5px;
+	border-radius: 100%;
+	background-image: url("../media/img_logo.jpg");
+	background-size: contain;
+	float: right;
+	margin-right: 7%;
+}
+#over_ons_txt{
+	letter-spacing: 1px;
+	line-height: 1.5em;
+	font-size: 0.8em;
+	color: #123c69;
+	font-family: Muli;
+	width: 64%;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	margin-left: 7%;
+	display: block;
+	overflow: hidden;
+}
+
+
+
+
+/*ONZE AANPAK*/
+#onze_aanpak{
+	/*border: solid black 5px;*/
+	height: 1100px;
+	background-image: url("../media/img_ocean_2.png");
+	background-size: contain;
+}
+#onze_aanpak_2{
+	/*border: solid black 5px;*/
+	height: 1100px;
+	background-image: url("../media/img_river_2.png");
+	background-size: contain;
+}
+#txt_onze_aanpak{
+	/*afmetingen*/
+	width: 80%;
+	height: 500px;
+	background-color: #74E2EE;
+	/*cirkel*/
+	border-radius: 50px;
+	/*positionering*/
+	float: right;
+	position: relative;
+	top:18%;
+	left: 5%;
+	/*oplossing position relative overlapping position fixed*/
+	z-index : 0;
+	
+}
+#title_onze_aanpak{
+	position: relative;
+	top: 15%;	
+}
+.onze_aanpak_container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+}
+.checkmark {
+	position: absolute;
+    left: 24px;;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.onze_aanpak_container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.onze_aanpak_container input:checked ~ .checkmark {
+    background-color: #74E2EE;
+}
+.onze_aanpak_container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+#onze_aanpak_keuze{
+	/*positionering*/
+	position: relative;
+		top: 30px;
+		left: 40px;
+}
+.onze_aanpak_video{
+	width: 500px;
+	height: 380px;
+	border-radius: 40px;
+	/*positionering*/
+	position: absolute;
+		top: 60px;
+		right: 120px;
+	
+}
+.onze_aanpak_txt{
+	width: 48%;
+}
+
+
+/*MIJLPALEN*/
+#mijlpalen{
+	height: 1100px;
+	/*border: solid black 5px;*/
+}
+.mijlpalen_tijdlijn{
+	padding-top: 15px;
+	padding-bottom: 80px;
+	position: relative;
+	left: 18%;
+}
+#mijlpalen_inhoud{
+	position: relative;
+	bot:150px;
+}
+
+
+/*HELP MEE*/
+#help_mee{
+	height: 1330px;
+	background-image: url("../media/img_background_helpmee.png");
+	background-size: contain;
+}
+#txt_help_mee_1{
+	/*afmetingen*/
+	width: 80%;
+	height: 250px;
+	background-color: #74E2EE;
+	/*cirkel*/
+	border-radius: 50px;
+	/*positionering*/
+	float: left;
+	position: relative;
+		top:80px;
+		right: 5%;
+	/*oplossing position relative overlapping position fixed*/
+	z-index : 0;
+}
+#help_mee_donatie_blok{
+	/**/
+	width: 55%;
+	position: relative;
+		left: 100px;
+}
+#help_mee_donatie{
+	color: white;
+	text-align: center;
+	font-size: 3em;
+	width: 30%;
+	height: 80%;
+	border: 3px solid white;
+	border-radius: 30px;
+	position: absolute;
+		top: 20px;
+		right: 20px;
+	background-color: #01CBE1;
+}
+#help_mee_donatie:hover{
+	color: #01CBE1;
+	border: 3px solid #01CBE1;
+	background-color: white;
+	cursor: pointer;
+}
+#help_mee_donatie a p:hover{
+	color: #01CBE1;
+	cursor: pointer;
+}
+#txt_help_mee_2{
+	/*afmetingen*/
+	width: 80%;
+	height: 250px;
+	background-color: #74E2EE;
+	/*cirkel*/
+	border-radius: 50px;
+	/*positionering*/
+	float: right;
+	position: relative;
+		top:160px;
+		left: 5%;
+	/*oplossing position relative overlapping position fixed*/
+	z-index : 0;
+}
+#help_mee_webshop_blok{
+	/**/
+	width: 55%;
+	position: absolute;
+		right: 120px;
+}
+#help_mee_webshop{
+	color: white;
+	text-align: center;
+	font-size: 3em;
+	width: 30%;
+	height: 80%;
+	border: 3px solid white;
+	border-radius: 30px;
+	position: absolute;
+		top: 20px;
+		left: 20px;
+	background-color: #01CBE1;
+}
+#help_mee_webshop:hover{
+	color: #01CBE1;
+	border: 3px solid #01CBE1;
+	background-color: white;
+	cursor: pointer;
+}
+#help_mee_webshop a p:hover{
+	color: #01CBE1;
+	cursor: pointer;
+}
+#txt_help_mee_3{
+	/*afmetingen*/
+	width: 80%;
+	height: 150px;
+	background-color: #74E2EE;
+	/*cirkel*/
+	border-radius: 50px;
+	/*positionering*/
+	float: left;
+	position: relative;
+		top:240px;
+		right: 5%;
+	/*oplossing position relative overlapping position fixed*/
+	z-index : 0;
+}
+#txt_help_mee_3 h1{
+	/*positionering*/
+	text-align: center;
+	margin-left: -700px;
+	margin-top: 10px;
+	font-size: 3em;
+}
+#help_mee_socials{
+	/*positionering*/
+	margin-left: 350px;
+	position: absolute;
+		top: 17px;
+}
+#help_mee_socials img{
+	width: 120px;
+	height: 120px;
+	/*positionering*/
+	margin: 0 20px 0 20px;
+}
+
+
+
+/*CONTACT*/
+#contact{
+	height: 1000px;
+	/*border: solid black 5px;*/
+
+}
+/*copypasta*/
+#contact * {
+	box-sizing: border-box;
+}
+#title_contact{
+	position: relative;
+		top: 80px;
+	z-index: 50;
+}
+#contact label{
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.2em;
+}
+#contact input[type=text],#contact input[type=email],#contact textarea {
+	width: 30%;
+	padding: 8px;
+	border: 2px solid white;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 3px;
+	margin-bottom: 12px;
+}
+
+#contact input[type=submit] {
+	border: 5px solid white;
+	background-color: #01CBE1;
+	color: #123c69;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#contact input[type=submit]:hover {
+	background-color: white;
+}
+
+.contact_form_container{
+	width: 80%;
+	border: 5px solid white;
+	border-radius: 50px;
+	background-color: #74E2EE;
+	margin: auto;
+	padding: 20px;
+	/**/
+	position: relative;
+}
+#contact_afbeelding{
+	width: 60%; 
+	height: 500px; 
+	float: right;
+	position: absolute;
+		top: 60px;
+		right: 60px;;
+}                                        
+#contact_afbeelding img{
+	width: 100%;
+	height: 450px;
+	border-radius: 50px;
+	border: 5px solid white;
+}
+
+
+/*PARTNERS*/
+#partners{
+	height: 500px;
+	/*border: solid black 5px;*/
+}
+#partners_1,#partners_2,#partners_3,#partners_4,#partners_5{
+	height: 185px;
+	width: 185px;
+	/*positionering*/
+	float: left;
+	margin: 0 30px 0 50px;
+}
+#partners_1 img:hover,#partners_2 img:hover,#partners_3 img:hover,#partners_4 img:hover,#partners_5 img:hover{
+	height: 185px;
+	width: 185px;
+	position: relative;
+		left:-7px
+}
+#partners_1,#partners_2,#partners_3,#partners_4,#partners_5{
+	/*positionering*/
+	position: relative;
+		bottom: 50px;
+}
+#partners_rij{
+	/*positionering*/
+	position: relative;
+		left: 105px;
+}
+.gradient_partners{
+	height: 180px;
+}
+
+
+
+/*FOOTER*/
+/*FOOTER BELLEN************************/
+
+#footer{
+	color: white;
+	font-weight: bolder;
+	height: 340px;
+	background-color: #123c69;
+}
+#footer_logo{
+	margin-top: 40px;
+	margin-left: 7%;
+}
+#footer_volg_ons, #footer_nieuwsbrief{
+	font-size: 1.2em;
+	margin: 0;
+}
+#footer_volg_ons p{
+	/*positionering*/
+	margin-left: 22%;
+	padding: 0;
+}
+#footer_socials{
+	/*positionering*/
+	margin-left: 11%;
+}
+#footer_socials img{
+	width: 50px;
+	height: 50px;
+	padding: 0;
+	/*positionering*/
+	margin: 0 20px 0 20px;
+}
+#footer_nieuwsbrief{
+	/*positionering*/
+	float: right;
+	margin: 0;
+	position: relative;
+		top:20px;
+		right: 440px;
+}
+#footer_nieuwsbrief input{
+	width: 300px;
+	height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	background-color: #123c69;
+	border: 3px solid white;
+	border-radius: 5px;
+}
+#footer_nieuwsbrief input:hover{
+	border: 3px solid #01CBE1;
+}
+#footer_nieuwsbrief_send{
+	background-image: url("../media/vec_send.png");
+	background-size: contain;
+	width: 25px;
+	height: 25px;
+	/*positionering*/
+	margin-left: 10px;
+	margin-top: 4px;
+	float: right;
+}
+#footer_nieuwsbrief_send:hover{
+	background-image: url("../media/vec_send_hover.png");
+	background-size: contain;
+}
+#footer_doneer{
+	width: 230px;
+	height: 70px;
+	color: white;
+	background-color: #123c69;
+	/*Border langs binnen*/
+	box-sizing: border-box;
+    	-moz-box-sizing: border-box;
+    	-webkit-box-sizing: border-box;
+	border: 7px solid white;
+	border-radius: 5px;
+	/*positionering*/
+	float: right;
+	position: relative;
+		left: 210px;
+		top: 40px;
+}
+#footer_doneer:hover{
+	color: #01CBE1;
+	border: 7px solid #01CBE1;
+}
+#footer_doneer a p:hover{
+	color: #01CBE1;
+}
+#footer_doneer p{
+	font-size: 2.2em;
+	font-weight: bolder;
+	/*positionering*/
+	position: relative;
+	left: 36px;
+	bottom: 30px;
+}
+#footer_adres{
+	/*positionering*/
+	float: right;
+	position: relative;
+		bottom: 70px;
+		right: 633px;
+}
+#footer_adres p:hover{
+	color: #01CBE1;
+}
+#footer_contactgegevens{
+	/*positionering*/
+	float: right;
+	position: relative;
+		bottom: 70px;
+		right: 10px;
+}
+/*FOOTER BELLEN************************/
+::placeholder { 
+  color: white;
+  opacity: 0.8;
+}
